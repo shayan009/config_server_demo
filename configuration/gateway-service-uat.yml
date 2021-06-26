@@ -1,3 +1,8 @@
-server.port=8062
-eureka.client.service-url.defaultZone=http://localhost:8072/eureka/
-eureka.client.healthcheck.enabled=true
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
