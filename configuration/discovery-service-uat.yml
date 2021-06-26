@@ -4,3 +4,10 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+    
+management:
+    endpoints:
+        web:
+            expose: '*'
+            exposure:
+                include: '*'    
