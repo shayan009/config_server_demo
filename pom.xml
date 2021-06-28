@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.shayan</groupId>
-	<artifactId>ConfigServer</artifactId>
+	<artifactId>BookManagementServer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ConfigServer</name>
-	<description>For configuring microservices</description>
+	<name>BookManagementServer</name>
+	<description>BookManagementServer</description>
 	<properties>
       
         <java.version>1.8</java.version>
@@ -57,9 +57,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-       
         </plugins>
-        
     </build>
 <repositories>
 		<repository>
