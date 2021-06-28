@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.shayan</groupId>
-	<artifactId>BookManagementServer</artifactId>
+	<artifactId>config_server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>BookManagementServer</name>
-	<description>BookManagementServer</description>
+	<name>ConfigServer</name>
+	<description>ConfigServer</description>
 	<properties>
       
         <java.version>1.8</java.version>
@@ -35,7 +35,10 @@
 			<optional>true</optional>
 		</dependency>
       
- 
+ <dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
       
     </dependencies>
 
