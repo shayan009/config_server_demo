@@ -1,13 +1,16 @@
 server:
-  port: 8072
+  port: 8761
+  
 eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
-    
+      
 management:
     endpoints:
         web:
             expose: '*'
             exposure:
-                include: '*'    
+                include: '*' 
+                
+                 

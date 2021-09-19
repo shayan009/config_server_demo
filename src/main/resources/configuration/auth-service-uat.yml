@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: discovery
+    hostname: eureka-service
   client:
     serviceUrl:
-      defaultZone: http://discovery:8072/eureka/
+      defaultZone: http://eureka-service:8761/eureka/
