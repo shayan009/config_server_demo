@@ -1,0 +1,58 @@
+eureka:
+    client:
+        healthcheck:
+            enabled: true
+        service-url:
+            defaultZone: http://eureka-service:8761/eureka/
+file:
+    upload-dir: ./src/main/webapp/WEB-INF/uploads
+logging:
+    level:
+        net:
+            guides: DEBUG
+        org:
+            hibernate: ERROR
+            springframework:
+                web: INFO
+lombok:
+    equalsAndHashCode:
+        callSuper: call
+management:
+    endpoints:
+        web:
+            expose: '*'
+            exposure:
+                include: '*'
+server:
+    port: 8082
+spring:
+    datasource:
+        password: ''
+        testWhileIdle: true
+        url: jdbc:mysql://mydb:3306/user_db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+        username: root
+        validationQuery: SELECT 1
+    h2:
+        console:
+            enabled: true
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL8Dialect
+        show-sql: true
+    mvc:
+        view:
+            prefix: /WEB-INF/view/
+            suffix: .jsp
+    servlet:
+        multipart:
+            enabled: true
+            file-size-threshold: 2KB
+            max-file-size: 800MB
+            max-request-size: 800MB
+user-service:
+    maxAge: 20
+    maxUser: 50
+    minAge: 3
