@@ -28,12 +28,12 @@ server:
     
 spring:
     datasource:
-        password: 'root'
+        password: root
         testWhileIdle: true
         url: jdbc:mysql://mydb:3306/user_db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
         username: root
         validationQuery: SELECT 1
-        driverClassName: com.mysql.jdbc.Driver
+        driverClassName: com.mysql.cj.jdbc.Driver
     h2:
         console:
             enabled: true
@@ -44,6 +44,7 @@ spring:
             hibernate:
                 dialect: org.hibernate.dialect.MySQL8Dialect
         show-sql: true
+        database: mysql
     mvc:
         view:
             prefix: /WEB-INF/view/
